@@ -149,6 +149,29 @@
 
     /* accessibility focus */
     :focus { outline: 3px solid rgba(107,57,255,0.14); outline-offset:3px }
+
+    /* Navigation Bar */
+.nav {
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  padding:14px 0;
+  margin-bottom:12px;
+  background:rgba(255,255,255,0.5);
+  backdrop-filter:blur(12px);
+  border-radius:14px;
+  border:1px solid rgba(16,24,40,0.05);
+}
+.nav-link {
+  font-size:14px;
+  font-weight:600;
+  color:#6b39ff;
+  text-decoration:none;
+  transition:opacity .2s;
+}
+.nav-link:hover {
+  opacity:0.6;
+}
   </style>
 </head>
 <body>
@@ -259,4 +282,10 @@
     }());
   </script>
 </body>
+  <!-- Global Navigation Bar -->
+<nav class="nav">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="mailto:princetiwari1@proton.me" class="nav-link">Contact</a>
+</nav>
 </html>
