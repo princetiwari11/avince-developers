@@ -1,1 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Our Story — Avince Developers</title>
+  <meta name="description" content="Avince Developers — Minimal, privacy-first Android apps & future games. Learn our vision, values and contact." />
+  <meta name="theme-color" content="#F7F7FB" />
+  <style>
+    :root{
+      --bg:#f6f7fb; --card:#ffffff; --muted:#6b7280;
+      --accent:#6b39ff; --accent-2:#00d4ff; --radius:16px; --maxw:1100px;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+    }
+    *{box-sizing:border-box} html,body{height:100%;margin:0;background:linear-gradient(180deg,#f4f6fb 0%, #eef2ff 100%);color:#081028}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(96%,var(--maxw));margin:28px auto}
+    .top{display:flex;align-items:center;gap:14px;padding:14px;background:var(--card);border-radius:14px;box-shadow:0 10px 30px rgba(16,24,40,0.06);border:1px solid rgba(16,24,40,0.03)}
+    .logo-wrap{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6));border:1px solid rgba(107,57,255,0.09);overflow:hidden}
+    .logo-wrap img{width:56px;height:56px;object-fit:contain;display:block}
+    .hdr-title{display:flex;flex-direction:column}
+    .app-name{font-size:16px;font-weight:700;margin:0}
+    .app-sub{font-size:13px;color:var(--muted);margin:0}
+    .hero{margin-top:16px;display:grid;grid-template-columns:1fr;gap:14px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.88));border-radius:18px;padding:20px;border:1px solid rgba(16,24,40,0.03);box-shadow:0 8px 26px rgba(16,24,40,0.04)}
+    .hero-top{display:flex;gap:12px;align-items:flex-start}
+    .brand-circle{width:56px;height:56px;border-radius:12px;background:rgba(255,255,255,0.62);display:flex;align-items:center;justify-content:center;border:1px solid rgba(16,24,40,0.03)}
+    .brand-circle img{width:40px;height:40px;object-fit:contain}
+    .hero-title{font-size:18px;font-weight:700;margin:0}
+    .hero-desc{color:var(--muted);margin:8px 0 0;line-height:1.45}
+    .cta-row{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:700;text-decoration:none}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(107,57,255,0.08)}
+    .statement{margin:18px 0;padding:18px;border-radius:12px;background:#fff;border:1px solid rgba(16,24,40,0.03);font-size:15px;line-height:1.5}
+    .section{margin-top:14px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card-sub{background:#fff;padding:14px;border-radius:12px;border:1px solid rgba(16,24,40,0.03)}
+    .card-sub h4{margin:0 0 8px}
+    footer{margin:24px 0;color:var(--muted);text-align:center}
+    @media (min-width:920px){ .hero{grid-template-columns:1fr 360px} }
+    @media (max-width:360px){ .logo-wrap{width:56px;height:56px} .logo-wrap img{width:48px;height:48px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- top -->
+    <div class="top" role="banner">
+      <div class="logo-wrap" aria-hidden="true">
+        <!-- local uploaded logo (use your uploaded file path) -->
+        <img src="/mnt/data/image1 (1).png" alt="Avince Developers logo" />
+      </div>
+      <div class="hdr-title">
+        <div class="app-name">Avince Developers</div>
+        <div class="app-sub">Minimal, private mobile apps & future premium games</div>
+      </div>
+    </div>
 
+    <!-- hero + side -->
+    <div class="hero" role="main">
+      <!-- main -->
+      <section class="card" aria-labelledby="our-story">
+        <div class="hero-top">
+          <div class="brand-circle" aria-hidden="true">
+            <img src="/mnt/data/image1 (1).png" alt="" />
+          </div>
+          <div>
+            <h2 id="our-story" class="hero-title">Our Story — Avince Developers</h2>
+            <p class="hero-desc">We design minimal, fast and privacy-first mobile experiences. Our mission is simple: craft software that feels effortless — beautiful UI, high performance, and clear privacy by default.</p>
+            <div class="cta-row" role="group">
+              <a class="btn" href="https://github.com/princetiwari11" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn ghost" href="mailto:princetiwari1@proton.me">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder message -->
+        <div class="statement" aria-live="polite">
+          <strong>Founder message</strong>
+          <p style="margin:8px 0 0;">
+            “Avince Developers was created with a simple belief — great software should feel effortless.
+            No distractions, no clutter, no compromise on privacy or performance. I build apps and games
+            that are polished, meaningful and crafted with care — minimal, private and refined for every user.”
+          </p>
+        </div>
+
+        <div class="section">
+          <h3 style="margin:0 0 10px">What we build</h3>
+          <div class="grid">
+            <div class="card-sub">
+              <h4>Utility Apps</h4>
+              <p class="muted">Small, focused tools — storage analyzers, performance utilities and on-device privacy features.</p>
+            </div>
+            <div class="card-sub">
+              <h4>Premium Mobile Games</h4>
+              <p class="muted">Future releases will focus on refined gameplay, AAA feel and tight UX.</p>
+            </div>
+            <div class="card-sub">
+              <h4>Design & Experience</h4>
+              <p class="muted">Minimal interfaces, clear flows, and attention to animation and detail.</p>
+            </div>
+            <div class="card-sub">
+              <h4>Privacy by Design</h4>
+              <p class="muted">On-device processing where possible, no analytics by default and transparent permissions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- side -->
+      <aside style="display:grid;gap:12px">
+        <div class="card" style="padding:14px">
+          <h4 style="margin:0 0 8px">Contact</h4>
+          <p class="muted" style="margin:0 0 10px">Questions, press or partnerships:</p>
+          <p style="margin:0"><strong>princetiwari1@proton.me</strong></p>
+        </div>
+
+        <div class="card" style="padding:14px">
+          <h4 style="margin:0 0 8px">Quick links</h4>
+          <p class="muted" style="margin:0">
+            <a href="https://github.com/princetiwari11" target="_blank" rel="noreferrer">GitHub</a><br/>
+            <a href="https://github.com/princetiwari11/Vionix" target="_blank" rel="noreferrer">Vionix repo</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>© 2025 Avince Developers — Built with care • <a href="mailto:princetiwari1@proton.me">princetiwari1@proton.me</a></footer>
+  </div>
+</body>
+</html>
