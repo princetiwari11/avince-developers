@@ -16,7 +16,17 @@
     a{color:inherit;text-decoration:none}
     .container{width:min(96%,var(--maxw));margin:28px auto}
     .top{display:flex;align-items:center;gap:14px;padding:14px;background:var(--card);border-radius:14px;box-shadow:0 10px 30px rgba(16,24,40,0.06);border:1px solid rgba(16,24,40,0.03)}
-    .logo-wrap{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6));border:1px solid rgba(107,57,255,0.09);overflow:hidden}
+    .logo-wrap{
+  width:64px;height:64px;
+  flex:0 0 64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:none;
+  box-shadow:none;
+  overflow:hidden;
+}
     .logo-wrap img{width:56px;height:56px;object-fit:contain;display:block}
     .hdr-title{display:flex;flex-direction:column}
     .app-name{font-size:16px;font-weight:700;margin:0}
@@ -24,7 +34,15 @@
     .hero{margin-top:16px;display:grid;grid-template-columns:1fr;gap:14px}
     .card{background:linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.88));border-radius:18px;padding:20px;border:1px solid rgba(16,24,40,0.03);box-shadow:0 8px 26px rgba(16,24,40,0.04)}
     .hero-top{display:flex;gap:12px;align-items:flex-start}
-    .brand-circle{width:56px;height:56px;border-radius:12px;background:rgba(255,255,255,0.62);display:flex;align-items:center;justify-content:center;border:1px solid rgba(16,24,40,0.03)}
+    .brand-circle{
+  width:56px;height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:none;
+  box-shadow:none;
+}
     .brand-circle img{width:40px;height:40px;object-fit:contain}
     .hero-title{font-size:18px;font-weight:700;margin:0}
     .hero-desc{color:var(--muted);margin:8px 0 0;line-height:1.45}
