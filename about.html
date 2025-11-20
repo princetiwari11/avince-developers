@@ -3,146 +3,148 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>Our Story — Avince Developers</title>
-  <meta name="description" content="Avince Developers — Minimal, privacy-first Android apps & future games. Learn our vision, values and contact." />
+  <title>Avince Developers — About</title>
+  <meta name="description" content="Avince Developers — About page. Crafting minimal, privacy-first apps & games." />
   <meta name="theme-color" content="#F7F7FB" />
   <style>
     :root{
-      --bg:#f6f7fb; --card:#ffffff; --muted:#6b7280;
-      --accent:#6b39ff; --accent-2:#00d4ff; --radius:16px; --maxw:1100px;
-      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      --bg:#f6f7fb; --card:#ffffff; --muted:#6b7280; --accent:#6b39ff; --accent-2:#00d4ff;
+      --glass: rgba(255,255,255,0.62); --glass-border: rgba(107,57,255,0.09);
+      --shadow: 0 16px 40px rgba(16,24,40,0.08); --radius:18px; --maxw:1200px;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
     }
     *{box-sizing:border-box} html,body{height:100%;margin:0;background:linear-gradient(180deg,#f4f6fb 0%, #eef2ff 100%);color:#081028}
     a{color:inherit;text-decoration:none}
-    .container{width:min(96%,var(--maxw));margin:28px auto}
-    .top{display:flex;align-items:center;gap:14px;padding:14px;background:var(--card);border-radius:14px;box-shadow:0 10px 30px rgba(16,24,40,0.06);border:1px solid rgba(16,24,40,0.03)}
-    .logo-wrap{
-  width:64px;height:64px;
-  flex:0 0 64px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:transparent;
-  border:none;
-  box-shadow:none;
-  overflow:hidden;
-}
-    .logo-wrap img{width:56px;height:56px;object-fit:contain;display:block}
-    .hdr-title{display:flex;flex-direction:column}
-    .app-name{font-size:16px;font-weight:700;margin:0}
-    .app-sub{font-size:13px;color:var(--muted);margin:0}
-    .hero{margin-top:16px;display:grid;grid-template-columns:1fr;gap:14px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.88));border-radius:18px;padding:20px;border:1px solid rgba(16,24,40,0.03);box-shadow:0 8px 26px rgba(16,24,40,0.04)}
-    .hero-top{display:flex;gap:12px;align-items:flex-start}
-    .brand-circle{
-  width:56px;height:56px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:transparent;
-  border:none;
-  box-shadow:none;
-}
-    .brand-circle img{width:40px;height:40px;object-fit:contain}
-    .hero-title{font-size:18px;font-weight:700;margin:0}
-    .hero-desc{color:var(--muted);margin:8px 0 0;line-height:1.45}
-    .cta-row{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:700;text-decoration:none}
-    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(107,57,255,0.08)}
-    .statement{margin:18px 0;padding:18px;border-radius:12px;background:#fff;border:1px solid rgba(16,24,40,0.03);font-size:15px;line-height:1.5}
-    .section{margin-top:14px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .card-sub{background:#fff;padding:14px;border-radius:12px;border:1px solid rgba(16,24,40,0.03)}
-    .card-sub h4{margin:0 0 8px}
-    footer{margin:24px 0;color:var(--muted);text-align:center}
-    @media (min-width:920px){ .hero{grid-template-columns:1fr 360px} }
-    @media (max-width:360px){ .logo-wrap{width:56px;height:56px} .logo-wrap img{width:48px;height:48px} }
+    .wrap{width:min(96%,var(--maxw));margin:28px auto;padding:26px;border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.88));box-shadow:var(--shadow);border:1px solid rgba(16,24,40,0.03)}
+    .top{display:flex;gap:16px;align-items:center}
+    .logo{width:84px;height:84px;border-radius:16px;display:flex;align-items:center;justify-content:center;border:1px solid var(--glass-border);background:var(--glass);overflow:hidden}
+    .logo img{width:64px;height:64px;object-fit:contain}
+    .title{font-size:20px;font-weight:700;margin:0}
+    .subtitle{color:var(--muted);margin:4px 0 0;font-size:14px}
+    .nav{margin-top:16px;display:flex;gap:12px;align-items:center}
+    .nav a{padding:8px 12px;border-radius:12px;font-weight:700;color:var(--accent);border:1px solid rgba(107,57,255,0.08);background:transparent}
+    .hero-grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:18px}
+    .card{background:#fff;padding:18px;border-radius:14px;border:1px solid rgba(16,24,40,0.03)}
+    .row{display:flex;gap:12px;align-items:flex-start}
+    .brand{width:56px;height:56px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;border:1px solid rgba(16,24,40,0.03)}
+    .brand img{width:44px;height:44px;object-fit:contain}
+    .lead{color:var(--muted);margin:0;font-size:14px;line-height:1.45}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(107,57,255,0.12)}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(107,57,255,0.08);box-shadow:none}
+    .panel{margin-top:16px;padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.98),#fff);border:1px solid rgba(16,24,40,0.03)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .tile{background:#fff;border-radius:12px;padding:14px;border:1px solid rgba(16,24,40,0.03);min-height:90px}
+    .tile h4{margin:0 0 8px;font-size:15px}
+    .tile p{margin:0;color:var(--muted);font-size:13px;line-height:1.4}
+    .side {display:flex;flex-direction:column;gap:12px}
+    .side .box{padding:14px;background:#fff;border-radius:12px;border:1px solid rgba(16,24,40,0.03)}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:920px){.hero-grid{grid-template-columns:1fr 1fr;grid-auto-rows:min-content}.grid{grid-template-columns:1fr}}
+    @media (max-width:720px){.hero-grid{grid-template-columns:1fr}.row{flex-direction:row} .logo{width:64px;height:64px}.brand{display:none}}
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- top -->
-    <div class="top" role="banner">
-      <div class="logo-wrap" aria-hidden="true">
-        <!-- local uploaded logo (use your uploaded file path) -->
+  <div class="wrap">
+
+    <!-- header -->
+    <div class="top">
+      <div class="logo" aria-hidden="true">
+        <!-- DEVELOPER LOGO (both logos enabled choice 3) -->
         <img src="logo.png" alt="Avince Developers logo" />
       </div>
-      <div class="hdr-title">
-        <div class="app-name">Avince Developers</div>
-        <div class="app-sub">Minimal, private mobile apps & future premium games</div>
+      <div>
+        <div class="title">Avince Developers</div>
+        <div class="subtitle">Minimal, private mobile apps & future premium games</div>
       </div>
     </div>
 
+    <!-- nav -->
+    <div class="nav" role="navigation" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html" style="background:linear-gradient(90deg,#f3f2ff,#fff);border-radius:12px;padding:8px 12px;color:#0b1220;font-weight:700">About</a>
+      <a href="https://github.com/princetiwari11" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+
     <!-- hero + side -->
-    <div class="hero" role="main">
-      <!-- main -->
+    <div class="hero-grid" role="main">
+
+      <!-- left: story -->
       <section class="card" aria-labelledby="our-story">
-        <div class="hero-top">
-          <div class="brand-circle" aria-hidden="true">
-            <img src="logo.png" alt="Avince Developers logo" />
+        <div class="row">
+          <div class="brand" aria-hidden="true">
+            <!-- VIONIX App logo (product) -->
+            <img src="Vionix_logo.png" alt="Vionix logo" />
           </div>
           <div>
-            <h2 id="our-story" class="hero-title">Our Story — Avince Developers</h2>
-            <p class="hero-desc">We design minimal, fast and privacy-first mobile experiences. Our mission is simple: craft software that feels effortless — beautiful UI, high performance, and clear privacy by default.</p>
-            <div class="cta-row" role="group">
+            <h2 id="our-story" style="margin:0;font-size:20px">Our Story — Avince Developers</h2>
+            <p class="lead">We design minimal, fast and privacy-first mobile experiences. Our mission: craft software that feels effortless — beautiful UI, high performance, and clear privacy by default.</p>
+
+            <div class="cta">
               <a class="btn" href="https://github.com/princetiwari11" target="_blank" rel="noreferrer">GitHub</a>
               <a class="btn ghost" href="mailto:princetiwari1@proton.me">Contact</a>
             </div>
           </div>
         </div>
 
-        <!-- Founder message -->
-        <div class="statement" aria-live="polite">
+        <div class="panel" style="margin-top:16px">
           <strong>Founder message</strong>
-          <p style="margin:8px 0 0;">
-            “Avince Developers was created with a simple belief — great software should feel effortless.
-            No distractions, no clutter, no compromise on privacy or performance. I build apps and games
-            that are polished, meaningful and crafted with care — minimal, private and refined for every user.”
-          </p>
+          <p style="margin:10px 0 0;color:var(--muted)">“Avince Developers was created with a simple belief — great software should feel effortless. No distractions, no clutter, no compromise on privacy or performance. I build apps and games that are polished, meaningful and crafted with care — minimal, private and refined for every user.”</p>
         </div>
 
-        <div class="section">
-          <h3 style="margin:0 0 10px">What we build</h3>
-          <div class="grid">
-            <div class="card-sub">
-              <h4>Utility Apps</h4>
-              <p class="muted">Small, focused tools — storage analyzers, performance utilities and on-device privacy features.</p>
-            </div>
-            <div class="card-sub">
-              <h4>Premium Mobile Games</h4>
-              <p class="muted">Future releases will focus on refined gameplay, AAA feel and tight UX.</p>
-            </div>
-            <div class="card-sub">
-              <h4>Design & Experience</h4>
-              <p class="muted">Minimal interfaces, clear flows, and attention to animation and detail.</p>
-            </div>
-            <div class="card-sub">
-              <h4>Privacy by Design</h4>
-              <p class="muted">On-device processing where possible, no analytics by default and transparent permissions.</p>
-            </div>
+        <h3 style="margin-top:18px">What we build</h3>
+        <div class="grid" role="list">
+          <div class="tile" role="listitem">
+            <h4>Utility apps</h4>
+            <p>Small, focused tools — storage analyzers, performance utilities and on-device privacy features.</p>
+          </div>
+          <div class="tile" role="listitem">
+            <h4>Premium mobile games</h4>
+            <p>Future releases will focus on refined gameplay, AAA feel and tight UX.</p>
+          </div>
+          <div class="tile" role="listitem">
+            <h4>Design & experience</h4>
+            <p>Minimal interfaces, clear flows, and attention to animation and detail.</p>
+          </div>
+          <div class="tile" role="listitem">
+            <h4>Privacy by design</h4>
+            <p>On-device processing where possible, no analytics by default and transparent permissions.</p>
           </div>
         </div>
       </section>
 
-      <!-- side -->
-      <aside style="display:grid;gap:12px">
-        <div class="card" style="padding:14px">
+      <!-- right: side -->
+      <aside class="side">
+        <div class="box">
           <h4 style="margin:0 0 8px">Contact</h4>
-          <p class="muted" style="margin:0 0 10px">Questions, press or partnerships:</p>
-          <p style="margin:0"><strong>princetiwari1@proton.me</strong></p>
+          <p class="small" style="margin:0">Questions, press or partnerships:</p>
+          <p style="margin-top:8px;font-weight:700">princetiwari1@proton.me</p>
         </div>
 
-        <div class="card" style="padding:14px">
+        <div class="box">
           <h4 style="margin:0 0 8px">Quick links</h4>
-          <p class="muted" style="margin:0">
-            <a href="https://github.com/princetiwari11" target="_blank" rel="noreferrer">GitHub</a><br/>
-            <a href="https://github.com/princetiwari11/Vionix" target="_blank" rel="noreferrer">Vionix repo</a>
+          <p class="small" style="margin:0">
+            <a href="https://github.com/princetiwari11" target="_blank">GitHub</a><br/>
+            <a href="https://github.com/princetiwari11/Vionix" target="_blank">Vionix repo</a>
           </p>
         </div>
+
+        <div class="box">
+          <h4 style="margin:0 0 8px">Roadmap (high level)</h4>
+          <ul style="margin:0 0 0 18px;color:var(--muted)">
+            <li>Polish Vionix + UX improvements</li>
+            <li>Introduce premium games — tight controls & AAA feel</li>
+            <li>Small team—craft-first approach, long-term support</li>
+          </ul>
+        </div>
       </aside>
+
     </div>
 
-    <footer>© 2025 Avince Developers — Built with care • <a href="mailto:princetiwari1@proton.me">princetiwari1@proton.me</a></footer>
+    <footer>
+      © 2025 Avince Developers — Built with care • <a href="mailto:princetiwari1@proton.me">princetiwari1@proton.me</a>
+    </footer>
+
   </div>
 </body>
 </html>
