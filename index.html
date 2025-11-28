@@ -35,7 +35,6 @@
       margin:28px auto;
     }
 
-    /* Top card (compact header) */
     .top {
       display:flex;
       align-items:center;
@@ -47,23 +46,21 @@
       border:1px solid rgba(16,24,40,0.03);
     }
    .logo-wrap{
-  width:64px;height:64px;
-  flex:0 0 64px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:transparent;
-  border:none;
-  box-shadow:none;
-  overflow:hidden;
-}
+      width:64px;height:64px;
+      flex:0 0 64px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:transparent;
+      border:none;
+      box-shadow:none;
+      overflow:hidden;
+    }
     .logo-wrap img{width:56px;height:56px;object-fit:contain;display:block}
-
     .hdr-title { display:flex; flex-direction:column; gap:3px; }
     .app-name { font-size:16px; font-weight:700; margin:0; letter-spacing:0.1px; color:#0b1220 }
     .app-sub { font-size:13px; color:var(--muted); margin:0 }
 
-    /* Hero card */
     .hero {
       margin-top:16px;
       display:grid;
@@ -77,33 +74,21 @@
       display:flex;flex-direction:column;gap:12px;
     }
     .hero-top { display:flex; gap:12px; align-items:flex-start }
-   .brand-circle{
-  width:56px;height:56px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:transparent;
-  border:none;
-  box-shadow:none;
-}
+
+    .brand-circle{
+      width:56px;height:56px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:transparent;
+      border:none;
+      box-shadow:none;
+    }
     .brand-circle img{width:40px;height:40px;object-fit:contain}
+
     .hero-title { font-size:18px; font-weight:700; margin:0 }
     .hero-desc { color:var(--muted); font-size:14px; margin:0; line-height:1.45 }
 
-    .cta-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:6px }
-    .btn {
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 14px; border-radius:12px; border:0; cursor:pointer;
-      font-weight:700; color:white; background:linear-gradient(90deg,var(--accent),var(--accent-2));
-      box-shadow: 0 8px 20px rgba(107,57,255,0.12);
-      text-decoration:none;
-    }
-    .btn.ghost {
-      background:transparent; color:var(--accent); border:1px solid rgba(107,57,255,0.08);
-      box-shadow:none; font-weight:700;
-    }
-
-    /* Features grid */
     .features {
       display:grid;
       grid-template-columns:repeat(2,1fr);
@@ -116,7 +101,6 @@
     .feature h4 { margin:0; font-size:14px; font-weight:700 }
     .feature p { margin:4px 0 0; color:var(--muted); font-size:13px; line-height:1.3 }
 
-    /* Right column small cards (on mobile become stacked) */
     .side {
       display:grid; gap:10px;
       margin-top:12px;
@@ -125,63 +109,43 @@
     .side h3{margin:0 0 6px;font-size:15px}
     .small { color:var(--muted); font-size:13px; margin:0 }
 
-    /* Footer */
     footer { margin:18px 0 60px; text-align:center; color:var(--muted); font-size:13px }
 
-    /* Desktop layout */
     @media (min-width:920px){
       .hero { grid-template-columns: 1fr 360px; align-items:start; gap:22px; }
-      .features { grid-template-columns: repeat(2,1fr); }
-      .side { margin-top:0 }
     }
 
-    /* Tweak spacing on small phones */
-    @media (max-width:360px){
-      .logo-wrap{width:56px;height:56px}
-      .logo-wrap img{width:48px;height:48px}
-      .hero-title{font-size:17px}
-      .app-name{font-size:15px}
+    .nav {
+      display:flex;
+      justify-content:center;
+      gap:28px;
+      padding:14px 0;
+      margin-bottom:12px;
+      background:rgba(255,255,255,0.5);
+      backdrop-filter:blur(12px);
+      border-radius:14px;
+      border:1px solid rgba(16,24,40,0.05);
     }
-
-    /* micro interactions */
-    .feature:hover { transform:translateY(-4px); transition:transform .18s ease }
-    .btn:hover { transform:translateY(-3px); transition:transform .18s ease }
-
-    /* accessibility focus */
-    :focus { outline: 3px solid rgba(107,57,255,0.14); outline-offset:3px }
-
-    /* Navigation Bar */
-.nav {
-  display:flex;
-  justify-content:center;
-  gap:28px;
-  padding:14px 0;
-  margin-bottom:12px;
-  background:rgba(255,255,255,0.5);
-  backdrop-filter:blur(12px);
-  border-radius:14px;
-  border:1px solid rgba(16,24,40,0.05);
-}
-.nav-link {
-  font-size:14px;
-  font-weight:600;
-  color:#6b39ff;
-  text-decoration:none;
-  transition:opacity .2s;
-}
-.nav-link:hover {
-  opacity:0.6;
-}
+    .nav-link {
+      font-size:14px;
+      font-weight:600;
+      color:#6b39ff;
+      text-decoration:none;
+      transition:opacity .2s;
+    }
+    .nav-link:hover {
+      opacity:0.6;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
 
-    <!-- Top compact header -->
-    <div class="top" role="banner" aria-label="Avince Developers header">
-      <div class="logo-wrap" aria-hidden="true">
-        <!-- USING YOUR UPLOADED LOGO PATH -->
-       <img src="logo.png" alt="Avince Developers logo" />
+    <!-- Top Header -->
+    <div class="top">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="Avince Developers logo" />
       </div>
       <div class="hdr-title">
         <div class="app-name">Avince Developers</div>
@@ -189,75 +153,71 @@
       </div>
     </div>
 
-    <!-- HERO + SIDE -->
-    <div class="hero" role="main">
+    <div class="hero">
 
-      <!-- Main content -->
-      <section class="hero-card" aria-labelledby="vionix-title">
+      <!-- EXISTING VIONIX SECTION -->
+      <section class="hero-card">
         <div class="hero-top">
-          <div class="brand-circle" aria-hidden="true">
+          <div class="brand-circle">
             <img alt="Vionix icon" src="Vinoix_logo.png" />
           </div>
           <div>
-            <h2 id="vionix-title" class="hero-title">VIONIX — Performance & Privacy</h2>
-            <p class="hero-desc">A lightweight Android utility that gives you secure DNS routing (local VPN), storage insights (apps, images, video, audio), and on-device performance tools. Minimal, private, and built for power users.</p>
-
-      
-
-        <!-- Features grid -->
-        <div style="margin-top:8px" class="features" aria-hidden="false">
-          <div class="feature" role="article">
-            <div>
-              <h4>DNS Guard (VPN)</h4>
-              <p>Local DNS routing via Android VPN (DNS-only). Persistent notification while active.</p>
-            </div>
-          </div>
-
-          <div class="feature" role="article">
-            <div>
-              <h4>Storage Analyzer</h4>
-              <p>Scan & preview apps, photos, videos and audio. Media access is runtime-only and local-only.</p>
-            </div>
-          </div>
-
-          <div class="feature" role="article">
-            <div>
-              <h4>Performance Tools</h4>
-              <p>Lightweight optimizations, weekly summaries, and app suggestions — processed on-device.</p>
-            </div>
-          </div>
-
-          <div class="feature" role="article">
-            <div>
-              <h4>Privacy-first</h4>
-              <p>No analytics. No data upload by default. Clear permissions and user control.</p>
-            </div>
+            <h2 class="hero-title">VIONIX — Performance & Privacy</h2>
+            <p class="hero-desc">A lightweight Android utility that gives you secure DNS routing (local VPN), storage insights, and performance tools — all processed on-device.</p>
           </div>
         </div>
 
+        <div class="features">
+          <div class="feature"><h4>DNS Guard</h4><p>Secure DNS routing with VPN-based DNS protection.</p></div>
+          <div class="feature"><h4>Storage Analyzer</h4><p>Scan and analyze apps, photos, videos, and media.</p></div>
+          <div class="feature"><h4>Optimization</h4><p>On-device performance suggestions, no cloud usage.</p></div>
+          <div class="feature"><h4>Privacy-first</h4><p>No analytics, no data collection.</p></div>
+        </div>
       </section>
 
-      <!-- Side column -->
-      <aside class="side" aria-label="Quick actions and support">
-        <div class="box" role="region" aria-labelledby="get-app">
-          <h3 id="get-app">Get the App</h3>
-          <p class="small">Recommended for testers: download the latest AAB / APK from GitHub Releases.</p>
-          <div style="margin-top:10px">
-            <a class="btn" href="https://github.com/princetiwari11/Vionix/releases" target="_blank" rel="noreferrer">Open Releases</a>
+      <!--  ✅ BAMBOO WINGS SECTION ADDED HERE -->
+      <section class="hero-card">
+        <div class="hero-top">
+          <div class="brand-circle">
+            <img alt="Bamboo Wings icon" src="bamboo_icon.png" />
+          </div>
+          <div>
+            <h2 class="hero-title">BAMBOO WINGS — Arcade Bird Adventure</h2>
+            <p class="hero-desc">
+              A relaxing bird-flying arcade game with bamboo pipes, natural animations,
+              no ads, no data collection, and offline-friendly gameplay.
+            </p>
           </div>
         </div>
 
-        <div class="box" role="region" aria-labelledby="support">
-          <h3 id="support">Contact & Support</h3>
-          <p class="small">Report issues, request features or privacy questions:</p>
-          <p style="margin-top:10px"><strong>princetiwari1@proton.me</strong></p>
+        <div class="features">
+          <div class="feature"><h4>Offline Gameplay</h4><p>Enjoy anytime — no internet required.</p></div>
+          <div class="feature"><h4>Kid-Friendly</h4><p>No ads, no tracking, safe for all ages.</p></div>
+          <div class="feature"><h4>Real Bird Animation</h4><p>Smooth wing animation using real sprite frames.</p></div>
+          <div class="feature"><h4>Zero Data Collection</h4><p>No personal data, analytics, or permissions.</p></div>
+        </div>
+      </section>
+      <!-- END BAMBOO WINGS SECTION -->
+
+      <!-- RIGHT SIDE CARDS -->
+      <aside class="side">
+        <div class="box">
+          <h3>Get the App</h3>
+          <p class="small">Download test builds from GitHub Releases.</p>
+          <a class="btn" href="https://github.com/princetiwari11/Vionix/releases" target="_blank">Open Releases</a>
         </div>
 
-        <div class="box" role="region" aria-labelledby="quick-links">
-          <h3 id="quick-links">Quick links</h3>
-          <p class="small" style="margin:0">
-            <a href="https://github.com/princetiwari11" target="_blank" rel="noreferrer">GitHub</a> ·
-            <a href="https://github.com/princetiwari11/Vionix" target="_blank" rel="noreferrer">Vionix repo</a>
+        <div class="box">
+          <h3>Contact & Support</h3>
+          <p class="small">For issues or questions:</p>
+          <strong>princetiwari1@proton.me</strong>
+        </div>
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <p class="small">
+            <a href="https://github.com/princetiwari11" target="_blank">GitHub</a> ·
+            <a href="https://github.com/princetiwari11/Vionix" target="_blank">Vionix repo</a>
           </p>
         </div>
       </aside>
@@ -267,20 +227,21 @@
     <footer>
       © 2025 Avince Developers — Built with care • <a href="mailto:princetiwari1@proton.me">princetiwari1@proton.me</a>
     </footer>
+
   </div>
 
   <script>
-    // Accessibility: add focus-visible class for keyboard users
     (function(){
       function onFirstTab(e){ if(e.key === 'Tab'){ document.documentElement.classList.add('user-is-tabbing'); window.removeEventListener('keydown', onFirstTab); } }
       window.addEventListener('keydown', onFirstTab);
     }());
   </script>
+
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="mailto:princetiwari1@proton.me" class="nav-link">Contact</a>
+  </nav>
 </body>
-  <!-- Global Navigation Bar -->
-<nav class="nav">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="mailto:princetiwari1@proton.me" class="nav-link">Contact</a>
-</nav>
 </html>
